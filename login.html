@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>ログイン｜WEB MANUAL管理ツール</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="favicon.ico" href="../img/favicon.ico">
+
+<link rel="stylesheet" type="text/css" href="../css/common/pure-min.css">
+<link rel="stylesheet" type="text/css" href="../css/common/pure-custom.css">
+<link rel="stylesheet" type="text/css" href="../css/common/component.css">
+<link rel="stylesheet" type="text/css" href="../css/admin/base.css">
+<link rel="stylesheet" type="text/css" href="../css/common/remodal.css">
+<link rel="stylesheet" type="text/css" href="../css/common/remodal-default-theme.css">
+
+<script src="../js/common/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="../js/common/remodal.js" type="text/javascript"></script>
+
+<script>
+$(function(){
+
+$('.help_link').click(function(){
+$('.help_contents').animate( { height: 'show' }, 300);
+$(this).remove();
+});
+});
+</script>
+
+<link rel="stylesheet" type="text/css" href="../css/login/index.css">
+
+</head>
+<body>
+
+<header>
+<div class="table">
+<div class="logo">
+<img src="/siteclone/api/logo-image">
+</div>
+<div class="manual-name">
+<span>ウェブマニュアル</span>
+</div>
+</div>
+</header>
+
+
+<div class="container">
+
+
+
+
+<form class="pure-form pure-form-aligned"" action="login_execute.html" method="post">
+<div class="row">
+<div class="pure-control-group input-field col s12 ">
+<label for="login_id">LOGIN ID</label>
+<input id="login_id" name="login_id" type="text" class="validate" placeholder="LOGIN ID">
+</div>
+<div class="pure-control-group input-field col s12 ">
+<label for="password">PASSWORD</label>
+<input id="password" name="password" type="password"
+class="validate" placeholder="PASSWORD">
+</div>
+<div class="col s12 login-button">
+<button name="login" type="submit"
+class="waves-effect waves-light btn pure-button pure-button-primary cont-center">LOGIN</button>
+</div>
+<input type="hidden" name="next_url" value="http://rhel-axa.symmetric.co.jp/admin/">
+</div>
+
+</form>
+</div>
+
+<footer id="footer">
+<div>
+&copy; <a href="http://www.symmetric.co.jp/" target="_blank">Symmetric Co.,Ltd</a>. All Rights Reserved.
+</div>
+</footer>
+
+</body>
+</html>

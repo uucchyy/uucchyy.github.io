@@ -1,0 +1,81 @@
+
+@charset "utf-8";
+
+body {
+	font-family: ArialMT, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+		メイリオ, sans-serif;
+	font-size: 15px;
+	line-height: 1.6;
+}
+
+input, select, textarea {
+	font-size: 100%;
+}
+
+input::-webkit-input-placeholder {
+    color: #ccc;
+    font-weight: normal;
+}
+input:-ms-input-placeholder {
+    color: #ccc;
+    font-weight: normal;
+}
+input::-moz-placeholder {
+    color: #ccc;
+    font-weight: normal;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/* image-icon */
+.inactive {
+	opacity: 0.1;
+}
+
+/* pager */
+.pager {
+	margin: 20px 0;
+	text-align: center;
+}
+
+.pager p,
+.pager ol {
+	display: inline-block;
+}
+
+.pager ol {
+	padding: 0;
+	margin: 0 10px;
+}
+
+.pager ol li {
+	display: inline-block;
+}
+
+.pager ol li a {
+	text-decoration: underline;
+}
+
+.pager ol li.current a {
+	text-decoration: none;
+}
+
+.pager ol li + li {
+	margin-left: 10px;
+}
+
+.pager a {
+	color: #000;
+}
